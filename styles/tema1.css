@@ -1,0 +1,165 @@
+p {
+    font-size: xx-large;
+}
+
+.primary{
+    color: blue;
+}
+
+p.primary{
+    color: red;
+}
+
+p.primary:hover{
+    background-color: rgb(230, 64, 166);
+    color: chartreuse;
+}
+
+input {
+    width: 90%
+}
+
+input.beauty-box{
+    font-size: 18px;
+    padding: 0;
+    text-align: right;
+    padding: 10px;
+    margin: 10px
+}
+
+.celda {
+    color: green;
+    font-style: italic;
+    text-align: right;
+}
+
+.first-column{
+    color: brown;
+    font-style: normal;
+}
+
+#tercer-titulo{
+    background-color: bisque;
+}
+
+li.take::before{
+    content: '*';
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px){
+    input.beauty-box{
+        width: 800px;
+    }
+}
+
+
+.contenedor{
+    display:flex;
+}
+
+.contenedor div{
+    width: 100px;
+    border: solid 1px black;
+}
+
+.absolute{
+    position: absolute;
+    left: 0;
+    top: 10px
+}
+
+.fixed{
+    position: fixed;
+    right: 0;
+    bottom: 10px;
+}
+
+* {
+    font-family: monospace;
+}
+
+
+@font-face {
+    font-family: 'Comic Sans MS';
+    src: url('https://fonts.googleapis2.com/css2?family=Bebas+Neue&family=Oswald:wght@200&display=swap');
+    font-size: xx-small;
+}
+
+p {
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+nav{
+    margin-left: 10%;
+    width: 80%;
+}
+
+nav ul{
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    cursor: pointer;
+    border: solid 1px lightgray;
+    margin-right: 0.2cm;
+    padding-left: .1cm;
+    padding-right: .1cm;
+    text-align: right;
+}
+
+nav ul li:hover{
+    background-color: aliceblue;
+    text-transform: uppercase;
+}
+
+/*nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    letter-spacing: .1cm;
+    cursor: pointer;
+    border: solid lightgrey;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-left: .1em;
+    text-align: right;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+nav ul li:hover{
+    background-color: lightgrey;
+    text-transform: uppercase;
+}*/
+
+.home{
+    margin: 10%;
+    border: solid lightgray 2px;
+    width: 50%;
+    height: 140px;
+    overflow-y: scroll;
+    background: linear-gradient(#e66465, #9198e5);
+}
+
+.home p{
+    color:yellow;
+    line-height: 0.65cm;
+    text-align: center;
+}
+
+.cover{
+    border: solid lightgray 2px;
+    width: 100%;
+    height: 480px;
+    background-color: #9198e5;
+    background-position: center center;
+    background-image: url('../images/banner2.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
